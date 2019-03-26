@@ -24,10 +24,10 @@ public class Inicio {
 	miLista.InsertarEnPrimero(60);
 	System.out.println(miLista.Listar());
 	System.out.println("borrar");
-	miLista.borrarUltimo();
-        miLista.borrarPrimero();
+       
 	
-	System.out.println(miLista.Listar());
+        System.out.println("numero localizado "+miLista.localizar(15));
+      
 // TODO code application logic here
     }
     
