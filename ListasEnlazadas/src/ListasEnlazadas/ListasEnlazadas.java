@@ -5,6 +5,8 @@
  */
 package ListasEnlazadas;
 
+import java.util.Scanner;
+
 /**
  *
  * @author EDUARDO
@@ -75,21 +77,36 @@ public class ListasEnlazadas
 			anterior.Siguiente=actual.Siguiente;
 		}
 	}
-        public int localizar(int bsq){
+        public int Localizar(int bsq){
             
-            int k=0;
+            int n=0;
             Nodo aux=Primero;
             while (aux!=null)
 		{
-                    k+=1;
+                    n+=1;
                     if(aux.info==bsq)
-                        bsq=k;
+                        bsq=n;
                     aux=aux.Siguiente;
 		}
                 
                 
             return bsq;
             
+        }
+        
+        public void Insert(){
+            
+            
+            Scanner scn = new Scanner(System.in);
+            System.out.println("Tamaño? =  ");
+            int dato,tm = scn.nextInt();
+            
+            for(int i=1;i<=tm;i++){
+                System.out.println(tm+"Insertar dato =");
+                dato = scn.nextInt();
+                InsertarEnPrimero(dato);
+            }
+  
         }
 
 }

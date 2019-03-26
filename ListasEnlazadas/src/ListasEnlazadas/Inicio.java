@@ -23,10 +23,12 @@ public class Inicio {
 	miLista.InsertarEnPrimero(40);
 	miLista.InsertarEnPrimero(60);
 	System.out.println(miLista.Listar());
-	System.out.println("borrar");
-       
-	
-        System.out.println("numero localizado "+miLista.localizar(15));
+        miLista.Insert();
+        System.out.println(miLista.Listar());
+        System.out.println("numero localizado "+miLista.Localizar(15));
+        
+        
+        
       
 // TODO code application logic here
     }
